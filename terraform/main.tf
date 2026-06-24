@@ -6,7 +6,6 @@ locals {
   }
 }
 
-
 resource "aws_dynamodb_table" "contact_form" {
   name         = "${var.project_name}-table"
   billing_mode = "PAY_PER_REQUEST"
