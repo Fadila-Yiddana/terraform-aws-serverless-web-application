@@ -48,6 +48,7 @@ resource "aws_iam_role_policy_attachment" "lambda_basic_execution" {
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 }
 
+
 data "archive_file" "lambda_zip" {
   type        = "zip"
   source_file = "../lambda/index.py"
@@ -194,4 +195,5 @@ resource "aws_cloudfront_distribution" "frontend" {
     cloudfront_default_certificate = true
   }
 }
+
 

@@ -10,6 +10,7 @@ output "dynamodb_table_name" {
   value = aws_dynamodb_table.contact_form.name
 }
 
+
 output "lambda_function_name" {
   value = aws_lambda_function.contact_form.function_name
 }
@@ -26,3 +27,4 @@ output "frontend_bucket_name" {
 output "cloudfront_domain_name" {
   value = aws_cloudfront_distribution.frontend.domain_name
 }
+
