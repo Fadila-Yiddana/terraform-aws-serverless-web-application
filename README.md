@@ -2,88 +2,79 @@
 
 ## Project Overview
 
-This project demonstrates how to build a fully serverless web application on AWS using Infrastructure as Code (IaC) with Terraform.
+This project demonstrates a fully serverless web application built on AWS using Terraform Infrastructure as Code (IaC).
 
-The solution hosts a static website in Amazon S3, delivers content globally through Amazon CloudFront, exposes backend functionality through Amazon API Gateway, processes requests with AWS Lambda, and stores application data in Amazon DynamoDB.
+The application consists of:
 
-The application use case is a Serverless Contact Form that allows users to submit contact requests through a web interface.
-
----
+* Amazon S3 for static website hosting
+* Amazon CloudFront for content delivery
+* Amazon API Gateway for API management
+* AWS Lambda for serverless compute
+* Amazon DynamoDB for data storage
+* IAM roles and policies for security
 
 ## Architecture
 
-![Architecture Diagram](diagrams/aws-serverless-web-application-architecture.png)
+User → CloudFront → S3 Static Website
 
-### Request Flow
+User → API Gateway → Lambda → DynamoDB
 
-1. User accesses the application through Amazon Route 53.
-2. Amazon CloudFront delivers website content globally.
-3. Amazon S3 hosts the static website files.
-4. API requests are sent to Amazon API Gateway.
-5. API Gateway invokes AWS Lambda.
-6. Lambda processes requests and stores data in Amazon DynamoDB.
+## Technologies Used
 
----
-
-## AWS Services Used
-
-* Amazon Route 53
-* Amazon CloudFront
-* Amazon S3
-* Amazon API Gateway
+* Terraform
 * AWS Lambda
+* Amazon API Gateway
 * Amazon DynamoDB
-* AWS IAM
+* Amazon S3
+* Amazon CloudFront
+* IAM
 
----
+## Features
 
-## Terraform Structure
-
-```text
-terraform/
-├── provider.tf
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── terraform.tfvars
-└── README.md
-```
-
----
-
-## Key Features
-
-* Fully serverless architecture
 * Infrastructure as Code using Terraform
-* Automatic scaling
-* Global content delivery with CloudFront
-* No server management required
-* High availability design
-* Cost-efficient architecture
+* Serverless architecture
+* Static website hosting
+* REST API endpoint
+* DynamoDB data persistence
+* Secure IAM permissions
+* Globally distributed content delivery
 
----
+## Repository Structure
 
-## Security
+terraform/
 
-* HTTPS communication through CloudFront and API Gateway
-* IAM roles for Lambda permissions
-* Least-privilege access principles
-* Controlled access between AWS services
+* Provider configuration
+* Variables
+* Outputs
+* Infrastructure resources
 
----
+frontend/
 
-## Deployment Status
+* Static website files
 
-This project is currently being developed as part of a cloud engineering portfolio and has been validated through Terraform configuration and architecture design.
+lambda/
 
----
+* Lambda function source code
 
-## Skills Demonstrated
+Diagram/
 
-* AWS Architecture Design
-* Infrastructure as Code (Terraform)
-* Serverless Computing
-* Cloud Security
-* Networking Concepts
-* GitHub Project Documentation
-* Cloud Solution Design
+* Architecture diagram
+
+## Learning Outcomes
+
+This project demonstrates:
+
+* AWS serverless architecture design
+* Terraform resource management
+* API integration patterns
+* Infrastructure automation
+* Cloud security best practices
+* Scalable web application design
+
+## Future Enhancements
+
+* Custom domain with Route 53
+* SSL certificates using ACM
+* CI/CD pipeline using GitHub Actions
+* Monitoring with CloudWatch
+* WAF integration

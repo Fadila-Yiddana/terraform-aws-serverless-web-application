@@ -5,3 +5,24 @@ output "project_name" {
 output "aws_region" {
   value = var.aws_region
 }
+
+output "dynamodb_table_name" {
+  value = aws_dynamodb_table.contact_form.name
+}
+
+output "lambda_function_name" {
+  value = aws_lambda_function.contact_form.function_name
+}
+
+
+output "api_gateway_url" {
+  value = aws_apigatewayv2_stage.default.invoke_url
+}
+
+output "frontend_bucket_name" {
+  value = aws_s3_bucket.frontend.bucket
+}
+
+output "cloudfront_domain_name" {
+  value = aws_cloudfront_distribution.frontend.domain_name
+}

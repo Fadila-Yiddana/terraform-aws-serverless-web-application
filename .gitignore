@@ -1,0 +1,15 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Lambda build artifacts
+lambda/*.zip
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
