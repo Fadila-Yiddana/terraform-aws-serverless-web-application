@@ -75,18 +75,29 @@ Amazon DynamoDB
 - Secure IAM roles and policies
 - Global content delivery with CloudFront
 
----
 
 ## Repository Structure
 
-| Folder | Description |
-|----------|-------------|
-| `terraform/` | Terraform configuration files |
-| `frontend/` | Static website source files |
-| `lambda/` | AWS Lambda function code |
-| `Diagram/` | Architecture diagram |
+```text
+.
+├── Diagram/
+│   └── serverless-web-application-architecture.png
+├── frontend/
+│   └── index.html
+├── lambda/
+│   └── index.py
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── provider.tf
+│   └── outputs.tf
+├── .gitignore
+└── README.md
+```
 
----
+
+
+
 
 ## Project Status
 
@@ -103,7 +114,20 @@ Amazon DynamoDB
 | Architecture Diagram | ✅ |
 | Deployment | 🔄 Pending (AWS Lab Environment Required) |
 
----
+
+
+## Skills Demonstrated
+
+- Infrastructure as Code (Terraform)
+- AWS Serverless Architecture
+- Amazon S3 Static Website Hosting
+- Amazon CloudFront
+- Amazon API Gateway
+- AWS Lambda
+- Amazon DynamoDB
+- IAM Roles and Policies
+- REST API Integration
+- Git & GitHub
 
 ## Learning Outcomes
 
