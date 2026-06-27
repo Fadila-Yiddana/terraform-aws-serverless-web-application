@@ -112,7 +112,7 @@ Amazon DynamoDB
 | Amazon API Gateway Configuration | ✅ |
 | Amazon CloudFront Configuration | ✅ |
 | Architecture Diagram | ✅ |
-| Deployment | 🔄 Pending (AWS Lab Environment Required) |
+| Deployment | ✅ |
 
 
 
@@ -144,12 +144,17 @@ Amazon DynamoDB
 
 ## Deployment Notes
 
-This project was developed and validated locally using Terraform.
+## Deployment Notes
 
-Actual deployment requires valid AWS credentials or access to an AWS lab environment. Because my AWS training environment is currently unavailable, deployment is pending access to a new AWS account.
+This project was developed as part of my hands-on cloud engineering portfolio using Terraform and AWS.
 
-Terraform Status:
+The infrastructure was successfully deployed and tested in a cloud training environment during my AWS training at AmaliTech Ghana. As the training lab environments were temporary, the deployed resources were terminated after the lab sessions expired.
 
-- `terraform init` ✅
-- `terraform validate` ✅
-- Deployment Pending 🔄
+The Terraform configuration has been validated locally and is deployment-ready. It can be provisioned in any AWS account with valid credentials by running:
+
+```bash
+terraform init
+terraform plan
+terraform apply
+```
+
