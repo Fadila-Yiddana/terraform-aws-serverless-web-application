@@ -142,7 +142,6 @@ Amazon DynamoDB
 
 ---
 
-## Deployment Notes
 
 ## Deployment Notes
 
