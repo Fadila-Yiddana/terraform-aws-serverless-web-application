@@ -129,21 +129,7 @@ Amazon DynamoDB
 - REST API Integration
 - Git & GitHub
 
-## Learning Outcomes
 
-This project strengthened my understanding of:
-
-- Infrastructure as Code (Terraform)
-- Serverless application architecture
-- Amazon API Gateway
-- AWS Lambda
-- Amazon DynamoDB
-- Amazon CloudFront
-- Amazon S3 Static Website Hosting
-- IAM security best practices
-- Cloud infrastructure automation
-
----
 
 ## Future Improvements
 
